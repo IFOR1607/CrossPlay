@@ -1,0 +1,96 @@
+/* DASHBOARD START */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9; /* Warna latar belakang kontras */
+    color: #333333;
+}
+
+/* ATURAN UTAMA: Menggeser konten agar tidak tertutup sidebar */
+.main-content {
+    margin-left: 260px; 
+    padding: 40px;
+    min-height: 100vh;
+}
+
+/* Bagian Header Dashboard */
+.dashboard-header {
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.dashboard-header p {
+    color: #7f8c8d;
+    font-size: 15px;
+}
+
+
+/* Bagian Konten Utama / Tabel Data */
+.data-section {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.data-section h2 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Styling Tabel */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.custom-table th, .custom-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 15px;
+}
+
+.custom-table th {
+    background-color: #f8f9fa;
+    color: #7f8c8d;
+    font-weight: 600;
+}
+
+.custom-table tr:hover {
+    background-color: #fcfcfc;
+}
+
+/* Badge Status */
+.badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.badge.warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+/* DASHBOARD END */
+

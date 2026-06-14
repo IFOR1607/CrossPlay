@@ -1,0 +1,88 @@
+ ==================================================
+KATALOG PRODUK (MOCK DATA FOR DATABASE)
+==================================================
+
+1. Kategori: Input Peripherals
+- Noir N1 Wireless Mechanical Keyboard
+  * Harga: Rp 850.000
+  * Deskripsi: Keyboard mekanikal layout 65% dengan konektivitas triple-mode dan switch yang sudah pre-lubed super smooth.
+- Logitech MX Master 3S Ergonomic Mouse
+  * Harga: Rp 1.550.000
+  * Deskripsi: Mouse ergonomis premium dengan sensor 8K DPI dan fitur scroll magspeed yang sangat senyap.
+- Keychron K2 Version 2 (Aluminium Frame)
+  * Harga: Rp 1.299.000
+  * Deskripsi: Keyboard mekanikal wireless layout 75% yang sangat ramah untuk pengguna Mac dan Windows.
+- Razer DeathAdder V3 Pro Wireless
+  * Harga: Rp 2.199.000
+  * Deskripsi: Mouse gaming super ringan (63 gram) dengan performa ultra-polling untuk kompetitif gaming kelas pro.
+- Apple Magic Trackpad 3 (Black)
+  * Harga: Rp 2.399.000
+  * Deskripsi: Trackpad nirkabel dengan dukungan penuh Multi-Touch gestures dan teknologi Force Touch yang presisi.
+
+2. Kategori: Audio Gear
+- Sony WF-1000XM5 True Wireless Earbuds
+  * Harga: Rp 3.499.000
+  * Deskripsi: TWS premium dengan teknologi Active Noise Cancelling (ANC) terbaik dan kualitas audio resolusi tinggi.
+- Audio-Technica ATH-M50xBT2 Wireless
+  * Harga: Rp 2.850.000
+  * Deskripsi: Headphone monitoring legendaris versi bluetooth dengan kejernihan suara yang luar biasa jujur.
+- Rode NT-USB Mini Microphone
+  * Harga: Rp 1.650.000
+  * Deskripsi: Mikrofon USB ringkas berkualitas studio untuk kebutuhan podcast, streaming, dan meeting online.
+- Eggel Terra 3 Plus Waterproof Speaker
+  * Harga: Rp 499.000
+  * Deskripsi: Speaker bluetooth portabel dengan bass bertenaga dan sertifikasi tahan air IP67, siap diajak petualang.
+- Anker Soundcore Space Q45
+  * Harga: Rp 1.350.000
+  * Deskripsi: Headphone over-ear wireless dengan daya tahan baterai hingga 50 jam dan fitur peredam bising adaptif.
+
+3. Kategori: Desk Setup Essentials
+- Minimalist Felt Deskmat (Extra Large)
+  * Harga: Rp 185.000
+  * Deskripsi: Alas meja berbahan premium felt wool yang lembut untuk estetika meja kerja minimalis ala Pinterest.
+- North Bayou NB-H100 Monitor Arm
+  * Harga: Rp 320.000
+  * Deskripsi: Braket monitor hidrolik fleksibel untuk ukuran 22-35 inci guna menghemat ruang meja kerja kamu.
+- Aluminium Adjustable Laptop Stand
+  * Harga: Rp 150.000
+  * Deskripsi: Dudukan laptop berbahan aluminium yang kokoh dan bisa diatur ketinggiannya untuk memperbaiki postur duduk.
+- Baseus Magnetic Desk Lamp
+  * Harga: Rp 210.000
+  * Deskripsi: Lampu meja magnetis nirkabel dengan pengaturan tingkat kecerahan touch-control, bebas kabel melilit.
+- Govee RGBIC LED Strip Lights (5 Meter)
+  * Harga: Rp 450.000
+  * Deskripsi: Lampu LED strip pintar yang bisa dikontrol lewat aplikasi untuk pencahayaan ambient yang keren di belakang meja.
+
+4. Kategori: Power & Cables
+- Anker Prime 67W GaN Wall Charger
+  * Harga: Rp 650.000
+  * Deskripsi: Charger dinding berteknologi GaN ultra-ringkas dengan 3 port untuk cas laptop dan HP sekaligus.
+- Premium Custom Coiled Cable (Type-C)
+  * Harga: Rp 195.000
+  * Deskripsi: Kabel keyboard mekanikal jenis coiled jalinan paracord dengan konektor aviator yang estetik banget.
+- Baseus Blade 100W Power Bank 20000mAh
+  * Harga: Rp 899.000
+  * Deskripsi: Powerbank desain super tipis dengan daya badak 100W, mampu mengisi ulang daya laptop di jalan.
+- Belkin BoostCharge 3-in-1 Wireless Charger
+  * Harga: Rp 1.899.000
+  * Deskripsi: Dok pengisian daya nirkabel premium sekaligus untuk iPhone, Apple Watch, dan AirPods dalam satu tempat.
+- Ugreen Braided USB-C to USB-C Cable (100W)
+  * Harga: Rp 75.000
+  * Deskripsi: Kabel data dan pengisian daya jalinan nilon kuat anti-putus dengan dukungan daya hingga 100W.
+
+5. Kategori: Computer Components
+- AMD Ryzen 7 7800X3D Processor
+  * Harga: Rp 6.250.000
+  * Deskripsi: Prosesor gaming terbaik dengan teknologi 3D V-Cache yang memberikan performa frame-rate maksimal dan efisiensi daya tinggi.
+- ASUS ROG Strix GeForce RTX 4070 Super
+  * Harga: Rp 12.800.000
+  * Deskripsi: Kartu grafis bertenaga dengan arsitektur NVIDIA Ada Lovelace, dilengkapi sistem pendingin tri-fan yang sangat optimal untuk gaming 1440p.
+- Corsair Vengeance RGB DDR5 32GB (2x16GB) 6000MHz
+  * Harga: Rp 1.950.000
+  * Deskripsi: Memori RAM performa tinggi yang dioptimalkan untuk motherboard Intel dan AMD, lengkap dengan pencahayaan RGB yang dinamis.
+- Samsung 990 Pro M.2 NVMe SSD 2TB
+  * Harga: Rp 2.750.000
+  * Deskripsi: Penyimpanan SSD internal dengan kecepatan baca/tulis ekstrem hingga 7450 MB/s untuk waktu loading game dan aplikasi yang instan.
+- Corsair RM850x 850W 80+ Gold Power Supply
+  * Harga: Rp 2.100.000
+  * Deskripsi: Unit catu daya bersertifikasi 80 Plus Gold dengan sistem kabel full-modular dan kipas yang senyap untuk menyuplai daya komponen PC dengan stabil.    

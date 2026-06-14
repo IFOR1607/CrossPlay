@@ -1,0 +1,477 @@
+
+/* ATURAN UTAMA: Menggeser konten agar tidak tertutup sidebar */
+.main-content {
+    margin-left: 260px; 
+    padding: 40px;
+    min-height: 100vh;
+}
+
+
+/* Container Utama */
+.category-container {
+    padding: 24px;
+    background-color: #f8fafc;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 1. Header & Statistik */
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header-title h1 {
+    font-size: 1.6rem;
+    color: #1e293b;
+    margin: 0 0 6px 0;
+}
+
+.header-title p {
+    color: #64748b;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Card Statistik Kreatif */
+.stat-card {
+    background: #ffffff;
+    padding: 16px 24px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e2e8f0;
+}
+
+.stat-icon {
+    background-color: #e0f2fe;
+    color: #0284c7;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.stat-value {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* 2. Bagian Aksi (Search & Tombol) */
+.category-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Kotak Pencarian Modern */
+.search-box {
+    position: relative;
+    width: 300px;
+}
+
+.search-box i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px 10px 10px 38px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    outline: none;
+    transition: all 0.2s;
+    box-sizing: border-box;
+}
+
+.search-box input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+/* Tombol Tambah */
+.btn-add-cat {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s;
+}
+
+.btn-add-cat:hover {
+    background-color: #2980b9;
+}
+
+/* 3. Desain Tabel Kategori */
+.table-wrapper {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.category-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.category-table th {
+    background-color: #f1f5f9;
+    color: #475569;
+    padding: 14px 20px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.category-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+    font-size: 0.95rem;
+}
+
+.category-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.category-name {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* Badge Penghitung Produk */
+.prod-count {
+    background-color: #f1f5f9;
+    color: #475569;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+/* Tombol Aksi */
+.cat-trigger-btns {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-cat-action {
+    border: none;
+    width: 34px;
+    height: 34px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.btn-cat-action.edit {
+    background-color: #fef3c7;
+    color: #d97706;
+}
+
+.btn-cat-action.edit:hover {
+    background-color: #fde68a;
+}
+
+.btn-cat-action.delete {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+.btn-cat-action.delete:hover {
+    background-color: #fecaca;
+}
+
+/* 4. CSS POP-UP MODAL KATEGORI */
+.cat-modal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none; /* Sembunyi */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.cat-modal-content {
+    background: #fff;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.cat-modal-header {
+    background: #f8fafc;
+    padding: 16px 20px;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cat-modal-header h2 { font-size: 1.1rem; margin: 0; color: #1e293b; }
+.cat-close-btn { font-size: 1.4rem; cursor: pointer; color: #94a3b8; }
+
+.cat-modal-form { padding: 20px; }
+.cat-form-group { margin-bottom: 16px; }
+.cat-form-group label { display: block; font-size: 0.85rem; font-weight: 600; color: #475569; margin-bottom: 6px; }
+.cat-form-group input { width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box; outline: none;}
+.cat-form-group input:focus { border-color: #3498db; }
+
+.cat-modal-footer { display: flex; justify-content: flex-end; gap: 10px; border-top: 1px solid #e2e8f0; padding-top: 14px; }
+.btn-cat-primary { background: #3498db; color: #fff; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 600;}
+.btn-cat-secondary { background: #e2e8f0; color: #475569; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; text-decoration: none;}
+
+/* ==========================================================================
+   CSS POP UP RENAME
+   ========================================================================== */
+.ren-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(4px);
+    display: none; /* Silakan ubah jadi flex lewat logika penentu modalmu */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.ren-modal-box {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.ren-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.ren-modal-title {
+    margin: 0;
+    font-size: 18px;
+    color: #1e293b;
+    font-weight: 600;
+}
+
+.ren-modal-close-x {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.ren-form-group {
+    margin-bottom: 20px;
+}
+
+.ren-form-label {
+    display: block;
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.ren-form-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #1e293b;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.ren-form-input:focus {
+    border-color: #2563eb;
+}
+
+.ren-modal-footer-btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn-ren-cancel {
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    background: #f1f5f9;
+    color: #64748b;
+    cursor: pointer;
+}
+
+.btn-ren-save {
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    background: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ==========================================================================
+   CSS POP UP DELETE
+   ========================================================================== */
+.del-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(4px);
+    display: none; /* Silakan ubah jadi flex lewat logika penentu modalmu */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.del-modal-box {
+    background: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.del-icon-alert {
+    width: 56px;
+    height: 56px;
+    background: #fee2e2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px auto;
+}
+
+.del-icon-alert i {
+    color: #ef4444;
+    font-size: 24px;
+}
+
+.del-modal-title {
+    margin: 0;
+    font-size: 18px;
+    color: #1e293b;
+    font-weight: 600;
+}
+
+.del-body-text {
+    margin: 0 0 24px 0;
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.del-modal-footer-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-del-cancel {
+    flex: 1;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    background: #f1f5f9;
+    color: #64748b;
+    cursor: pointer;
+}
+
+.btn-del-confirm {
+    flex: 1;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    background: #ef4444;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.ren-modal-overlay,
+.del-modal-overlay {
+  display: none; /* default sembunyi */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
