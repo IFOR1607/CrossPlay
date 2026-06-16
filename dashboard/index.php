@@ -1,10 +1,11 @@
 <?php
     session_start();
 
-    if($_SESSION['is_login'] == false) {
-        header('location:../auth/login.php');
-        exit();
-    }
+
+if (!isset($_SESSION['is_login']) || $_SESSION['is_login'] !== true) {
+    header('location:../auth/login.php');
+    exit();
+}
 ?>
 
 <!DOCTYPE html>

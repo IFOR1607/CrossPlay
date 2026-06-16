@@ -2,10 +2,10 @@
     session_start();
     require_once dirname(__DIR__) . '/database/db.php'; 
     $messege_error = '';
-    if($_SESSION['is_login'] == false) {
-        header('location:../auth/login.php');
-        exit(); 
-    }
+if (!isset($_SESSION['is_login']) || $_SESSION['is_login'] !== true) {
+    header('location:../auth/login.php');
+    exit();
+}
 
 
     if(isset($_POST['submit_produk'])) {
