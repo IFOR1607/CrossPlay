@@ -1,5 +1,7 @@
 <?php
     session_start();
+    ob_start();
+
     require_once dirname(__DIR__) . '/database/db.php'; 
     $messege_error = '';
 if (!isset($_SESSION['is_login']) || $_SESSION['is_login'] !== true) {

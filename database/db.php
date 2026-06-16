@@ -2,7 +2,7 @@
     $servername = "db";
     $username = "root";
     $password = "root";
-    $dbname = "training";
+    $dbname = "crossplay";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

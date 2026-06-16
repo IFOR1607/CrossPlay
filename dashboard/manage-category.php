@@ -1,5 +1,7 @@
 <?php
     session_start();
+    ob_start();
+
     require_once dirname(__DIR__) . '/database/db.php'; 
     if($_SESSION['is_login'] == false) {
         header('location:../auth/login.php');

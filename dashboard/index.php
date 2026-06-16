@@ -1,6 +1,6 @@
 <?php
     session_start();
-
+    ob_start();
 
 if (!isset($_SESSION['is_login']) || $_SESSION['is_login'] !== true) {
     header('location:../auth/login.php');
