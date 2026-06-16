@@ -1,17 +1,15 @@
 version: '3.8'
 
 services:
-  # 1. KONTAINER WEB SERVER (PHP + APACHE)
+# 1. KONTAINER WEB SERVER (PHP + APACHE)
   webserver:
     image: php:8.1-apache
     container_name: crossPlay_webserver
-    command: >
-      bash -c "docker-php-ext-install mysqli && apache2-foreground"
-    
+    command: bash -c "a2enmod rewrite && sed -i 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf && docker-php-ext-install mysqli && apache2-foreground"
     ports:
-      - "8080:80" # Di browser nanti diakses lewat localhost:8080
+      - "8080:80"
     volumes:
-      - .:/var/www/html # Menghubungkan folder di Windows ke dalam Docker
+      - .:/var/www/html
     networks:
       - crossPlay_network
 

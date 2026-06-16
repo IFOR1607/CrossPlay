@@ -1,4 +1,4 @@
-TRAINING PRESSPLAY/
+CrossPlay/
 │
 ├── app/                          └── [FOLDER UTAMA LOGIKA & DATA]
 │   ├── core/

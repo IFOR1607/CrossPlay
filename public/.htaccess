@@ -1,0 +1,8 @@
+Options -Indexes
+
+RewriteEngine On
+# Mencegah perulangan jika file atau folder memang aslinya ada di folder public
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+# Lempar sisanya ke index.php sebagai parameter url
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
