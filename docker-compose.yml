@@ -23,7 +23,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: training # Sesuaikan dengan nama databasemu yang dulu
+      MYSQL_DATABASE: crossplay # Sesuaikan dengan nama databasemu yang dulu
     ports:
       - "3306:3306"
     volumes:
