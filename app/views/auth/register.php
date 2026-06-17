@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?= BASEURL; ?>css/auth.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/auth.css">
     <title>Register</title>
 </head>
 <body>
@@ -22,21 +22,21 @@
             <h2>Create Account</h2>
             <p>Buat akun untuk mulai berbelanja.</p>
 
-            <form action="<?= BASEURL; ?>auth/register" method="post">
+            <form>
 
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email" placeholder="Masukkan email" required>
+                    <label>Email</label>
+                    <input type="email" placeholder="Masukkan email">
                 </div>
 
                 <div class="form-group">
-                    <label for="username">Username</label>
-                    <input id="username" name="username" type="text" placeholder="Masukkan username" required>
+                    <label>Username</label>
+                    <input type="text" placeholder="Masukkan username">
                 </div>
 
                 <div class="form-group">
-                    <label for="password">Password</label>
-                    <input id="password" name="password" type="password" placeholder="Masukkan password" required>
+                    <label>Password</label>
+                    <input type="password" placeholder="Masukkan password">
                 </div>
 
                 <button type="submit" class="btn-register">
@@ -47,7 +47,7 @@
 
             <div class="auth-footer">
                 Sudah punya akun?
-                <a href="<?= BASEURL; ?>login.php">Login</a>
+                <a href="<?= BASEURL; ?>/auth/login">login</a>
             </div>
 
         </div>

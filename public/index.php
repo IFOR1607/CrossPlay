@@ -1,7 +1,7 @@
-<?php
-define('BASEURL', 'http://localhost:8080/');
+    <?php
 
-require_once __DIR__ . '/../app/core/Controller.php';
-require_once __DIR__ . '/../app/core/App.php';
+// 1. Panggil file init.php untuk memuat semua mesin utama
+require_once '../app/init.php';
 
+// 2. Jalankan/Nyalakan mesin utamanya!
 $app = new App();

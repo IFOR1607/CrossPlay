@@ -3,46 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?= BASEURL; ?>css/auth.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/auth.css">
+    <title>Register</title>
 </head>
 <body>
 
     <div class="left-side">
         <h1>Shopify</h1>
         <p>
-            Masuk ke akun kamu untuk melanjutkan belanja dengan mudah,
-            cepat, dan aman.
+            Bergabung sekarang dan nikmati pengalaman belanja yang mudah,
+            cepat, dan aman dengan berbagai produk pilihan terbaik.
         </p>
     </div>
 
     <div class="right-side">
         <div class="auth-card">
 
-            <h2>Login</h2>
-            <p>Masuk untuk mulai berbelanja.</p>
+            <h2>Create Account</h2>
+            <p>Buat akun untuk mulai berbelanja.</p>
 
-            <form action="<?= BASEURL; ?>auth/login" method="post">
+            <form>
 
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email" placeholder="Masukkan email" required>
+                    <label>Email</label>
+                    <input type="email" placeholder="Masukkan email">
                 </div>
 
                 <div class="form-group">
-                    <label for="password">Password</label>
-                    <input id="password" name="password" type="password" placeholder="Masukkan password" required>
+                    <label>Password</label>
+                    <input type="password" placeholder="Masukkan password">
                 </div>
 
                 <button type="submit" class="btn-register">
-                    Login
+                    Register
                 </button>
 
             </form>
 
             <div class="auth-footer">
-                Belum punya akun?
-                <a href="<?= BASEURL; ?>register.php">Register</a>
+                Sudah punya akun?
+                <a href="<?= BASEURL; ?>/auth/register">Register</a>
             </div>
 
         </div>
