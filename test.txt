@@ -1,1 +1,0 @@
-Pengunaan wsl UBUNTU dan token
