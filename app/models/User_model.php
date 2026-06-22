@@ -1,17 +1,32 @@
 <?php
 
 class User_model {
-    private $table = 'users'; // Nama tabel di database kamu
+    private $table = 'users';
     private $db;
 
     public function __construct() {
-        // Otomatis menyalakan mesin pompa database yang ada di core
         $this->db = new Database;
     }
 
-    // Contoh fungsi untuk mengambil semua data user (hanya untuk tes koneksi)
-    public function getAllUsers() {
-        $this->db->query('SELECT * FROM ' . $this->table);
-        return $this->db->resultSet();
+    public function getUserByEmail($email) {
+        $query = "SELECT * FROM " . $this->table . " WHERE email = :email LIMIT 1";
+
+        $this->db->query($query);
+        $this->db->bind('email', $email);
+
+        return $this->db->single();
+    }
+
+    public function tambahUser($data) {
+        $query = "INSERT INTO " . $this->table . " (email, username, password) VALUES (:email, :username, :password)";
+
+        $this->db->query($query);
+        $this->db->bind('email', $data['email']);
+        $this->db->bind('username', $data['username']);
+        $this->db->bind('password', password_hash($data['password'], PASSWORD_DEFAULT));
+
+        $this->db->execute();
+
+        return $this->db->rowCount();
     }
 }

@@ -1,1 +1,1 @@
-tst credenetial fi
+tst credentialdocker compose up -d --buildd

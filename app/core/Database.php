@@ -12,7 +12,7 @@ class Database {
 
     public function __construct() {
         // Data Source Name (Alamat sumber data)
-        $dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->db_name;
+        $dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->db_name . ';charset=utf8mb4';
 
         // Setelan tambahan agar PDO berjalan optimal dan aman
         $option = [
@@ -36,6 +36,10 @@ class Database {
 
     // Fungsi untuk mengikat data (Binding) agar aman dari SQL Injection
     public function bind($param, $value, $type = null) {
+        if (is_string($param) && $param[0] !== ':') {
+            $param = ':' . $param;
+        }
+
         if (is_null($type)) {
             switch (true) {
                 case is_int($value):
@@ -56,7 +60,7 @@ class Database {
 
     // Eksekusi query
     public function execute() {
-        $this->stmt->execute();
+        return $this->stmt->execute();
     }
 
     // Ambil semua data hasil query (Banyak baris)
@@ -69,5 +73,10 @@ class Database {
     public function single() {
         $this->execute();
         return $this->stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
+    // Hitung jumlah baris yang berubah setelah query INSERT/UPDATE/DELETE
+    public function rowCount() {
+        return $this->stmt->rowCount();
     }
 }
